@@ -11,7 +11,36 @@
 		A35EAEFA2599B33700878048 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAEF92599B33700878048 /* ContentView.swift */; };
 		A35EAEFC2599B33900878048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35EAEFB2599B33900878048 /* Assets.xcassets */; };
 		A35EAEFF2599B33900878048 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35EAEFE2599B33900878048 /* Preview Assets.xcassets */; };
+		A35EAF0F2599B42B00878048 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35EAF0E2599B42B00878048 /* WidgetKit.framework */; };
+		A35EAF112599B42B00878048 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A35EAF102599B42B00878048 /* SwiftUI.framework */; };
+		A35EAF142599B42B00878048 /* TextShadowWidgetExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = A35EAF132599B42B00878048 /* TextShadowWidgetExt.swift */; };
+		A35EAF162599B42F00878048 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A35EAF152599B42F00878048 /* Assets.xcassets */; };
+		A35EAF1A2599B42F00878048 /* TextShadowWidgetExtExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A35EAF0C2599B42A00878048 /* TextShadowWidgetExtExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A35EAF182599B42F00878048 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A35EAEEC2599B33700878048 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A35EAF0B2599B42A00878048;
+			remoteInfo = TextShadowWidgetExtExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A35EAF1E2599B42F00878048 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A35EAF1A2599B42F00878048 /* TextShadowWidgetExtExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		A35EAEF42599B33700878048 /* TextShadow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextShadow.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -20,6 +49,12 @@
 		A35EAEFB2599B33900878048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A35EAEFE2599B33900878048 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A35EAF002599B33900878048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A35EAF0C2599B42A00878048 /* TextShadowWidgetExtExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = TextShadowWidgetExtExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A35EAF0E2599B42B00878048 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		A35EAF102599B42B00878048 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		A35EAF132599B42B00878048 /* TextShadowWidgetExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextShadowWidgetExt.swift; sourceTree = "<group>"; };
+		A35EAF152599B42F00878048 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A35EAF172599B42F00878048 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +65,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A35EAF092599B42A00878048 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35EAF112599B42B00878048 /* SwiftUI.framework in Frameworks */,
+				A35EAF0F2599B42B00878048 /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -37,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				A35EAEF62599B33700878048 /* TextShadow */,
+				A35EAF122599B42B00878048 /* TextShadowWidgetExt */,
+				A35EAF0D2599B42B00878048 /* Frameworks */,
 				A35EAEF52599B33700878048 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				A35EAEF42599B33700878048 /* TextShadow.app */,
+				A35EAF0C2599B42A00878048 /* TextShadowWidgetExtExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +116,25 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		A35EAF0D2599B42B00878048 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A35EAF0E2599B42B00878048 /* WidgetKit.framework */,
+				A35EAF102599B42B00878048 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A35EAF122599B42B00878048 /* TextShadowWidgetExt */ = {
+			isa = PBXGroup;
+			children = (
+				A35EAF132599B42B00878048 /* TextShadowWidgetExt.swift */,
+				A35EAF152599B42F00878048 /* Assets.xcassets */,
+				A35EAF172599B42F00878048 /* Info.plist */,
+			);
+			path = TextShadowWidgetExt;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -79,15 +145,34 @@
 				A35EAEF02599B33700878048 /* Sources */,
 				A35EAEF12599B33700878048 /* Frameworks */,
 				A35EAEF22599B33700878048 /* Resources */,
+				A35EAF1E2599B42F00878048 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A35EAF192599B42F00878048 /* PBXTargetDependency */,
 			);
 			name = TextShadow;
 			productName = TextShadow;
 			productReference = A35EAEF42599B33700878048 /* TextShadow.app */;
 			productType = "com.apple.product-type.application";
+		};
+		A35EAF0B2599B42A00878048 /* TextShadowWidgetExtExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A35EAF1B2599B42F00878048 /* Build configuration list for PBXNativeTarget "TextShadowWidgetExtExtension" */;
+			buildPhases = (
+				A35EAF082599B42A00878048 /* Sources */,
+				A35EAF092599B42A00878048 /* Frameworks */,
+				A35EAF0A2599B42A00878048 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TextShadowWidgetExtExtension;
+			productName = TextShadowWidgetExtExtension;
+			productReference = A35EAF0C2599B42A00878048 /* TextShadowWidgetExtExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -99,6 +184,9 @@
 				LastUpgradeCheck = 1230;
 				TargetAttributes = {
 					A35EAEF32599B33700878048 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					A35EAF0B2599B42A00878048 = {
 						CreatedOnToolsVersion = 12.3;
 					};
 				};
@@ -117,6 +205,7 @@
 			projectRoot = "";
 			targets = (
 				A35EAEF32599B33700878048 /* TextShadow */,
+				A35EAF0B2599B42A00878048 /* TextShadowWidgetExtExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +217,14 @@
 			files = (
 				A35EAEFF2599B33900878048 /* Preview Assets.xcassets in Resources */,
 				A35EAEFC2599B33900878048 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A35EAF0A2599B42A00878048 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35EAF162599B42F00878048 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,7 +240,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		A35EAF082599B42A00878048 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A35EAF142599B42B00878048 /* TextShadowWidgetExt.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A35EAF192599B42F00878048 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A35EAF0B2599B42A00878048 /* TextShadowWidgetExtExtension */;
+			targetProxy = A35EAF182599B42F00878048 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A35EAF012599B33900878048 /* Debug */ = {
@@ -265,6 +378,7 @@
 		A35EAF042599B33900878048 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -272,7 +386,7 @@
 				DEVELOPMENT_TEAM = 9X4K329J25;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TextShadow/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -287,6 +401,7 @@
 		A35EAF052599B33900878048 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -294,13 +409,55 @@
 				DEVELOPMENT_TEAM = 9X4K329J25;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = TextShadow/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tradeflags.textshadow.TextShadow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A35EAF1C2599B42F00878048 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9X4K329J25;
+				INFOPLIST_FILE = TextShadowWidgetExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradeflags.textshadow.TextShadow.TextShadowWidgetExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A35EAF1D2599B42F00878048 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9X4K329J25;
+				INFOPLIST_FILE = TextShadowWidgetExt/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tradeflags.textshadow.TextShadow.TextShadowWidgetExt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -323,6 +480,15 @@
 			buildConfigurations = (
 				A35EAF042599B33900878048 /* Debug */,
 				A35EAF052599B33900878048 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A35EAF1B2599B42F00878048 /* Build configuration list for PBXNativeTarget "TextShadowWidgetExtExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A35EAF1C2599B42F00878048 /* Debug */,
+				A35EAF1D2599B42F00878048 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

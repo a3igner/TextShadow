@@ -10,7 +10,7 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
-            .padding()
+            .shadow(color: .green, radius: 3, x: 1, y: 1)
     }
 }
 
